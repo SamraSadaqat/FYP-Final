@@ -1,0 +1,899 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primay-font-family;
+  font-weight: $font-400;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: $bg-color;
+  color: $white-color;
+}
+
+.ant-typography {
+  font-family: "Poppins";
+}
+
+li,
+p {
+  font-family: $primay-font-family;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+th,
+td {
+  font-family: $primay-font-family;
+}
+
+.ant-layout {
+  background: $bg-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+// Layout
+.main-wrapper {
+  padding: 0 3rem;
+}
+
+.section-pb {
+  padding-bottom: 7rem;
+}
+
+.section-pt {
+  padding-top: 5rem;
+}
+
+.custom-container-pt {
+  padding-top: 3rem;
+}
+.custom-container-pb {
+  padding-bottom: 3rem;
+}
+
+.custom-container-pl {
+  padding-left: 3rem;
+}
+
+.custom-container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+// Font Size
+
+.medium-font-size {
+  font-size: $font-size-1;
+}
+
+.fs-md {
+  font-size: 2.0625rem; //33px
+}
+.fs-lg {
+  font-size: $font-size-xlg; //24px
+}
+
+.primary-text-color {
+  color: $primary-color;
+}
+
+.gray-text-color {
+  color: $gray-100 !important;
+}
+
+.dark-gray-text-color {
+  color: $gray-200 !important;
+}
+
+.white-text {
+  color: $white-color !important;
+}
+
+// Font Weight
+.font-400 {
+  font-weight: $font-400;
+}
+
+// margin
+
+.mb-1 {
+  margin-bottom: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 3rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  display: flex;
+  justify-content: end;
+}
+
+//diff color classes
+.redColor {
+  color: red;
+}
+
+// Start Footer
+
+.primary-footer {
+  border-top: 5px solid #414241;
+}
+
+.footer-bottom-menu {
+  column-count: 2;
+  li {
+    a {
+      color: $white-color;
+      display: block;
+      padding: 1rem 0;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+// buttons
+.submit-btn-sm {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  border-radius: 4px !important;
+  color: $white-color;
+  background: $primary-color;
+  font-size: 1rem;
+  height: 40px;
+  border: none;
+
+  &:hover {
+    background: #363636 !important;
+    color: $white-color !important;
+    span {
+      color: $white-color !important;
+    }
+  }
+}
+
+.cancel-btn-sm {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  border-radius: 4px !important;
+  color: $white-color;
+  font-size: 1rem;
+  height: 40px;
+  background: #363636;
+  border-color: #363636;
+
+  &:hover {
+    color: $white-color !important;
+    background: $primary-color !important;
+    border-color: $primary-color !important;
+  }
+}
+
+//ant select
+.ant-select {
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+
+  .ant-select-selector {
+    font-family: "Poppins";
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  .ant-select-selection-item {
+    font-size: 14px !important;
+  }
+
+  .ant-select-selection-placeholder {
+    font-size: 14px !important;
+  }
+}
+
+// Social Menu
+
+.social-menu {
+  a {
+    text-align: center;
+    transition: transform 0.5s ease;
+    margin: 0 1rem;
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+}
+
+.copyright {
+  border-top: 1px solid #424141;
+}
+
+// Page Top Row
+
+.page-top-row {
+  padding: 1rem 10rem;
+  background-color: $primary-color;
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .back-btn {
+    cursor: pointer;
+  }
+}
+
+.page {
+  padding: 5rem 0;
+
+  h3 {
+    color: $primary-color;
+  }
+  ul {
+    padding-left: 2rem;
+  }
+}
+
+// Contact Page
+
+.title-with-border {
+  border-bottom: 4px solid $primary-color;
+  display: inline-block;
+}
+
+.contact {
+  .content {
+    font-size: 1.1875rem;
+  }
+}
+
+.contact-left {
+  .email {
+    color: $primary-color;
+    font-size: $font-size-lg;
+    font-family: $roboto-font;
+    font-weight: $font-600;
+    margin-bottom: 4rem;
+    display: inline-block;
+  }
+
+  strong {
+    font-size: $font-size-lg;
+    color: $primary-color;
+    font-family: $roboto-font;
+    display: inline-block;
+  }
+
+  p,
+  .link {
+    font-size: $font-size-lg;
+  }
+
+  .link {
+    color: $white-color;
+    text-decoration: none;
+    border-bottom: 1px solid $primary-color;
+    display: inline-block;
+  }
+}
+
+// Contact Form
+
+.contact-form,
+.custom-antd-form {
+  label {
+    font-size: $font-size-md !important;
+    color: $white-color !important;
+    font-family: $opan-sans-font !important;
+    flex-direction: row-reverse;
+    margin-bottom: 0.5rem !important;
+
+    &:before {
+      margin-left: 12px !important;
+      font-size: 19px !important;
+    }
+  }
+
+  .ant-input {
+    background: $black-shade-700 !important;
+    border: 1px solid $input-border !important;
+    border-radius: 7px;
+    color: $white-color;
+    font-size: 1rem;
+    padding: 10px 30px 15px 21px !important;
+    line-height: 1;
+  }
+  .ant-input-number {
+    background: $black-shade-700 !important;
+    border: 1px solid $input-border !important;
+    border-radius: 7px;
+    color: $white-color;
+    font-size: 1rem;
+    padding: 0px 30px 15px 21px !important;
+    line-height: 1;
+    width: 100%;
+    color: white;
+
+    .ant-input-number-placeholder {
+      font-size: 1rem;
+      color: $gray-200;
+    }
+  }
+
+  .ant-select {
+    background: $black-shade-700 !important;
+    border: 1px solid $input-border !important;
+    border-radius: 7px;
+    padding: 7px 30px 7px 21px !important;
+    line-height: 1;
+
+    .ant-select-selection-placeholder {
+      font-size: 1rem;
+      color: $gray-200;
+    }
+
+    span.ant-select-selection-item {
+      color: white;
+    }
+
+    .ant-select-selector {
+      background: transparent;
+      border: none;
+      padding: 0;
+
+      &:active {
+        border: none;
+      }
+    }
+  }
+
+  .submit-btn {
+    background: $primary-color;
+    font-size: 1rem;
+    height: 55px;
+
+    &:hover {
+      background: #363636;
+    }
+  }
+}
+
+.pass-field {
+  .ant-input-affix-wrapper {
+    background: $black-shade-700 !important;
+    border: 1px solid $input-border !important;
+    border-radius: 7px;
+    color: $white-color;
+    .ant-input {
+      border: none !important;
+      padding-left: 10px !important;
+    padding-top: 6px !important;
+    padding-bottom: 11px !important;
+    }
+    svg {
+      fill: $white-color;
+    }
+  }
+}
+
+.ant-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $gray-200;
+  opacity: 1; /* Firefox */
+}
+
+.ant-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $gray-200;
+}
+
+.ant-input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $gray-200;
+}
+
+// Event Page
+.event-page {
+  .primary-title-row {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.iconBorder {
+  height: 40px;
+  width: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d9d9d9;
+}
+
+.icon-btn {
+  @extend .iconBorder;
+  height: 25px;
+  width: 25px !important;
+}
+
+.quantity-tag {
+  height: 40px;
+  width: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d9d9d9;
+  color: white;
+  border-radius: 5px;
+  margin: 0px 15px;
+}
+
+// Rules
+
+.slick-dots.slick-dots-bottom {
+  bottom: 40px;
+
+  li {
+    button {
+      height: 20px;
+      border-radius: 50%;
+      opacity: 0.45;
+      width: 20px;
+    }
+  }
+
+  .slick-active {
+    width: 20px !important;
+
+    button {
+      background: $primary-color !important;
+    }
+  }
+}
+
+.img-slider {
+  height: calc(100vh - 180px);
+  overflow: hidden;
+
+  .img-responsive {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.rules-page {
+  p {
+    font-size: $font-size-md;
+    font-family: $opan-sans-font;
+    line-height: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-family: $opan-sans-font;
+    font-weight: $font-700;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+//spacer element
+.spacer {
+  display: flex;
+}
+
+// Rules Tabs
+.secondary-title-style {
+  font-size: 2.2rem;
+  line-height: 1.6;
+  color: $primary-color;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.rules-tabs {
+  .ant-tabs-nav-wrap {
+    justify-content: space-between;
+    padding: 0 8rem;
+
+    .ant-tabs-nav-list {
+      width: 100%;
+
+      .ant-tabs-tab {
+        flex: 1;
+        justify-content: center;
+        padding: 1.6rem;
+
+        .ant-tabs-tab-btn {
+          color: $white-color;
+          font-size: $font-size-md;
+        }
+      }
+    }
+  }
+
+  .ant-tabs-nav {
+    &::before {
+      border-bottom: 5px solid #3a3a3a;
+    }
+  }
+
+  .ant-tabs-tab-active {
+    .ant-tabs-tab-btn {
+      color: $primary-color !important;
+    }
+  }
+
+  .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+    height: 5px;
+    background: $primary-color;
+  }
+
+  .ant-tabs-content {
+    color: $white-color;
+    font-size: $font-size-md;
+    padding: 4rem 8rem;
+
+    ul {
+      li {
+        list-style: none;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 0.8rem;
+
+        &:before {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 11px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// All Buttons
+
+.btn {
+  font-size: 1rem;
+  height: 55px;
+  font-family: $opan-sans-font;
+  font-weight: $font-600;
+  background: $primary-color;
+  &:hover {
+    background: $black-shade-700 !important;
+  }
+}
+
+.secondary-btn {
+  background: $black-shade-700;
+  &:hover {
+    background: $primary-color !important;
+  }
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 26px;
+    margin-right: 1rem;
+  }
+}
+.btn-transparent {
+  background: transparent;
+  color: $white-color;
+  border-color: $white-color;
+}
+
+.ant-result-title {
+  font-family: "Poppins";
+  color: white !important;
+  font-size: 40px !important;
+}
+
+// Start Forms
+
+.label {
+  font-size: $font-size-md !important;
+  color: $white-color !important;
+  font-family: $roboto-font !important;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem !important;
+  display: inline-flex;
+}
+
+.input-with-icon {
+  position: relative;
+  .left-icon {
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    z-index: 999;
+  }
+  .ant-input {
+    padding-left: 90px !important;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+// input[type="number"] {
+//   -moz-appearance: textfield; /* Firefox */
+// }
+
+.send-code-row {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+  input {
+    width: 110px;
+    margin: 0 10px;
+    text-align: center;
+  }
+}
+
+// Login
+.auth-pages {
+  // background: url("../images/login-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 40%;
+}
+
+.login-wrapper {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding: 3rem 5rem 2rem 5rem;
+  background: $secondary-color;
+}
+
+.app-checkbox {
+  height: 2em;
+  width: 2em;
+}
+
+//Admin Layout
+
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  &--container {
+    align-self: center;
+    height: calc(100vh - 19vh);
+    width: calc(100vw - 4em);
+  }
+
+  .ant-card-body {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .admin-header {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    padding: 20px;
+    height: 5rem;
+    background-color: $primary-color;
+    &--btn {
+      float: right;
+    }
+  }
+}
+
+.ant-result-subtitle {
+  color: white !important;
+}
+
+// Tables
+
+.table-wrapper > div,
+.ant-table,
+.ant-table-cell {
+  background: $white-color !important;
+  color: black !important;
+}
+.ant-table-cell,
+.ant-table-thead th {
+  border-bottom: 1px solid rgba(133, 133, 133, 0.5) !important;
+}
+
+// Pagination
+
+// .ant-pagination .ant-pagination-prev button,
+// .ant-pagination .ant-pagination-next button,
+// .ant-pagination .ant-pagination-item a,
+// .ant-empty .ant-empty-description,
+// .ant-upload * {
+//   color: $white-color !important;
+// }
+
+// .ant-pagination .ant-pagination-item-active {
+//   background-color: $primary-color;
+//   border-color: $primary-color;
+// }
+
+.ant-table-tbody {
+  .ant-btn-icon-only {
+    background: #878787;
+    color: $white-color;
+    &:hover {
+      border-color: $white-color;
+      color: $white-color;
+    }
+  }
+}
+
+.ant-input-affix-wrapper {
+  background: #1e1b2c !important;
+  border: 1px solid rgba(133, 133, 133, 0.5) !important;
+  border-radius: 7px;
+  color: $white-color;
+  font-size: 1rem;
+  line-height: 1;
+  input {
+    background-color: transparent;
+    color: $white-color;
+  }
+}
+
+.ant-input-number-input {
+  color: $white-color !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+.custom-antd-form .ant-input-number {
+  padding-top: 10px !important;
+  padding-bottom: 6px !important;
+  height: 3rem !important;
+}
+
+.ant-input-number-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $gray-200 !important;
+  opacity: 1; /* Firefox */
+}
+
+.ant-input-number-input:-ms-input-placeholder {
+  color: $gray-200 !important;
+  opacity: 1; /* Firefox */
+}
+
+.ant-input-number-input::-ms-input-placeholder {
+  color: $gray-200 !important;
+  opacity: 1; /* Firefox */
+}
+.custom-antd-form-new .ant-select {
+  padding: 9px 0 !important;
+  height: auto !important;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  padding: 0 11px !important;
+}
+
+.ant-upload-select {
+  span {
+    color: $white-color;
+  }
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa)[class^="ant-table"]
+  [class^="ant-table"] {
+  background: $white-color !important;
+}
+
+input#createCourt_password {
+  padding: 5px 30px 12px 21px !important;
+}
+
+.multipleImagesView {
+  img {
+    max-width: 150px;
+  }
+}
+
+.dashboardResultImage {
+  .ant-result-subtitle {
+    font-family: "Poppins";
+    font-size: 1.5rem;
+  }
+  .ant-result-title {
+    font-family: "Poppins";
+    font-weight: 600;
+  }
+}
+
+.ant-select-selection-item-remove {
+  svg {
+    color: white !important;
+  }
+}
+
+.ant-input-data-count {
+  color: white !important;
+}
+
+
+input,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    background-color: transparent!important;
+}

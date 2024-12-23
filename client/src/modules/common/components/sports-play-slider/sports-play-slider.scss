@@ -1,0 +1,90 @@
+@import "assets/sass/variable";
+
+.sport-play-slider-row {
+  display: flex;
+  column-gap: 4em;
+  padding: 2rem 0;
+  .sport-play-slider-col {
+    display: flex;
+    align-items: center;
+    width: 664px;
+    height: 321px;
+    border-radius: 12px;
+    position: relative;
+    padding: 3rem 3rem;
+    .inner {
+      width: 664px;
+      .sport-play-slider-content {
+        text-align: right;
+      }
+      .sport-play-slider-image {
+        position: absolute;
+        top: 0;
+      }
+      .girl {
+        right: -260px;
+        top: 30px;
+      }
+      .patient {
+        right: -300px;
+        top: 40px;
+      }
+      .medical {
+        right: -280px;
+        top: 40px;
+      }
+      
+      .encounter {
+        width: 176px;
+        top: 45px;
+        right: 470px;
+      }
+
+      .men {
+        width: 176px;
+        top: 50px;
+       
+      }
+      .footeball {
+        left: -21px;
+        top: -21px;
+      }
+      .sport-play-slider-content {
+        h3 {
+          color: $white-color;
+          font-size: 2rem;
+          line-height: 1.5;
+        }
+        p {
+          color: $white-color;
+          font-size: 1.125rem;
+        }
+        .book-now {
+          color: $white-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .orange {
+    background: linear-gradient(102.47deg, #f03125 -47.61%, #ff9a87 133.7%);
+    .sport-play-slider-content {
+      width: calc(100% - 180px);
+      margin-left: 192px;
+    }
+  }
+  .blue {
+    background: linear-gradient(283.32deg, #38b5ea 1.25%, #5ee3fb 100%);
+    .sport-play-slider-content {
+      width: 67%;
+      text-align: left !important;
+    }
+  }
+  .green {
+    background: linear-gradient(283.32deg, #50e174 1.25%, #49d4a7 100%);
+    .sport-play-slider-content {
+      width: calc(100% - 200px);
+      margin-left: 210px;
+    }
+  }
+}

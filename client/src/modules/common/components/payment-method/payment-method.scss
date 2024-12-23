@@ -1,0 +1,71 @@
+@import "assets/sass/variable";
+
+.payment-page {
+  .ant-radio-group {
+    width: 100%;
+
+    .ant-radio-wrapper {
+      h3 {
+        color: $white-color;
+        font-size: $font-size-lg;
+        margin: 0;
+      }
+
+      p {
+        color: $white-color;
+        font-size: $font-size-df;
+        color: #9d9d9d;
+        margin: 0;
+      }
+
+      .image {
+        width: 100px;
+      }
+
+      .ant-row {
+        width: 100%;
+      }
+    }
+  }
+
+  .ant-space {
+    display: block;
+    width: 100%;
+
+    .ant-space-item {
+      .ant-radio-wrapper {
+        margin-bottom: 3rem;
+        width: 100%;
+
+        .ant-radio {
+          position: absolute !important;
+          right: 0;
+
+          .ant-radio-inner {
+            background: transparent !important;
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .ant-radio-checked {
+          .ant-radio-inner {
+            background: $primary-color !important;
+            border-color: $primary-color !important;
+
+            &:after {
+              font-size: 64px !important;
+              background: transparent !important;
+              width: 0 !important;
+              height: 0 !important;
+              color: #fff;
+              left: 22px;
+              top: 9px;
+              content: "\2713";
+            }
+          }
+        }
+      }
+    }
+  }
+}

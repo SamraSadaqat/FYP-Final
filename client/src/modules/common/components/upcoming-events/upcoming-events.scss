@@ -1,0 +1,46 @@
+@import "assets/sass/variable";
+
+.primary-title-row {
+  padding-bottom: 2rem;
+
+  h3 {
+    font-size: 2rem;
+    font-family: $barlow-font;
+    font-weight: $font-500;
+  }
+
+  .see-all-btn {
+    color: $primary-color;
+    font-size: $font-size-lg;
+
+    svg {
+      margin-left: 1rem;
+      position: relative;
+      top: 1px;
+    }
+
+    &:hover {
+      color: $gray-100;
+
+      path {
+        stroke: $gray-100;
+      }
+    }
+  }
+}
+
+.events-row {
+  display: flex;
+  column-gap: 2rem;
+
+  .custom-col {
+    width: 320px;
+
+    .custom-col-img {
+      width: 320px;
+      display: block;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "assets/sass/variable";
+
+.top-main-header {
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // padding-top: 1rem;
+  padding-bottom: 1rem;
+  .main-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      list-style: none;
+      padding: 0 0.5rem;
+      a {
+        font-size: $font-size-df;
+        color: $white-color;
+        text-decoration: none;
+        padding: $font-size-sm $font-size-sm;
+        display: inline-block;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    .parent-nav {
+      position: relative;
+      &:hover {
+        .sub-navigation {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      &:after {
+        position: absolute;
+        background: url("../../../../assets/images/arrow-down.svg") no-repeat;
+        width: 20px;
+        height: 20px;
+        content: "";
+        top: 21px;
+        right: -6px;
+      }
+      .sub-navigation {
+        background: $primary-color;
+        position: absolute;
+        box-shadow: 0 0 15px rgb(240 70 37 / 77%);
+        border-radius: 4px;
+        width: 181px;
+        z-index: 9999;
+        opacity: 0;
+        transform: translateY(29px);
+        transition: all 0.5s ease;
+        li {
+          a {
+            &:hover {
+              color: $black-shade-900;
+            }
+          }
+        }
+      }
+    }
+  }
+  .login-btn {
+    height: 2.8125rem;
+    color: $white-color;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.8125rem;
+    border: 1px solid $white-color;
+    display: inline-block;
+    padding: 0 3.125rem;
+    border-radius: 4px;
+    font-size: $font-size-df;
+    &:hover {
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}

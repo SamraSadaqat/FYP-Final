@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Colors
+
+$primary-color: #F04625;
+$black: #000000;
+$black-shade-900: #1e1e1e;
+$black-shade-800: #1c1c1c;
+$black-shade-700: #1E1B2C;
+$white-color: #ffffff;
+$gray-100: #dcdcdc;
+$gray-200: #818181;
+
+$bg-color:#100D1F;
+$input-border:#858585;
+$secondary-color: #1E1B2C;
+ 
+// Font Family
+
+// $opan-sans-font:'Open Sans', sans-serif;
+// $barlow-font:'Barlow Condensed', sans-serif;
+// $roboto-font: 'Roboto', sans-serif;
+
+$opan-sans-font: "Poppins", sans-serif;
+$barlow-font: "Poppins", sans-serif;
+$roboto-font: "Poppins", sans-serif;
+
+$primay-font-family:"Poppins", sans-serif;
+
+// Font Weight
+
+$font-100: 100;
+$font-200: 200;
+$font-300: 300;
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+$font-700: 700;
+$font-800: 800;
+$font-900: 900;
+
+// Font Size
+
+$primary-font-size: 1.875rem;
+$secondary-font-size: 2.5625rem;
+$font-size-1: 2.8125rem;
+
+$font-size-df: 1rem;
+$font-size-sm: 0.875rem; // 14px
+$font-size-md: 1.125rem; // 18px
+$font-size-lg: 1.25rem; // 20px
+$font-size-xlg: 1.5rem; // 24px
+
+// Set Margin And Padding
+
+$sizes: 12;
+
+@mixin margin-classes {
+  @for $i from 1 through $sizes {
+    $margin: $i * 0.25rem;
+    /* margin #{$margin} */
+    .m#{$i} {
+      margin: $margin;
+    }
+    .ml#{$i} {
+      margin-left: $margin;
+    }
+    .mr#{$i} {
+      margin-right: $margin;
+    }
+    .mt#{$i} {
+      margin-top: $margin;
+    }
+    .mb#{$i} {
+      margin-bottom: $margin;
+    }
+    .mx#{$i} {
+      margin-left: $margin;
+      margin-right: $margin;
+    }
+    .my#{$i} {
+      margin-top: $margin;
+      margin-bottom: $margin;
+    }
+  }
+}
+@include margin-classes;
+
+@mixin padding-classes {
+  @for $i from 1 through $sizes {
+    $padding: $i * 0.25rem;
+    /* padding #{$padding} */
+    .p#{$i} {
+      padding: $padding;
+    }
+    .pl#{$i} {
+      padding-left: $padding;
+    }
+    .pr#{$i} {
+      padding-right: $padding;
+    }
+    .pt#{$i} {
+      padding-top: $padding;
+    }
+    .pb#{$i} {
+      padding-bottom: $padding;
+    }
+    .px#{$i} {
+      padding-left: $padding;
+      padding-right: $padding;
+    }
+    .py#{$i} {
+      padding-top: $padding;
+      padding-bottom: $padding;
+    }
+  }
+}
+@include padding-classes;

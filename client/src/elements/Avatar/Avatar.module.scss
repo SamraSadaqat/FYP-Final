@@ -1,0 +1,19 @@
+.regularAvatar {
+  img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+}
+
+.headerAvatar {
+  img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+}

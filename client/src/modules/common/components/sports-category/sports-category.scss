@@ -1,0 +1,36 @@
+@import "assets/sass/variable";
+
+.sport-category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    width: 45%;
+    list-style: none;
+    margin-bottom: 1.5rem;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 83px;
+      background: $black-shade-700;
+      border-radius: 10px;
+      font-size: 1.3rem;
+      color: $gray-100;
+      height: 100%;
+      transition: all 0.5s ease-in;
+
+      .ant-image-img {
+        margin-right: 1rem;
+        width: 100%;
+        max-width: 60%;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+}

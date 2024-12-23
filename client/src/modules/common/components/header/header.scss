@@ -1,0 +1,81 @@
+@import "assets/sass/variable";
+
+.top-header {
+  padding-left: 0;
+  padding-right: 0;
+  // padding-top: 1.5rem;
+  // height: 20px;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-style: italic;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .toggle {
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+.navigation-panel {
+  position: fixed;
+  background: $black-shade-900;
+  width: 400px;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  .close {
+    font-size: 2rem;
+    position: absolute;
+    right: 49px;
+    top: 40px;
+    display: inline-block;
+    font-family: $opan-sans-font;
+    font-weight: $font-200;
+    cursor: pointer;
+  }
+  ul {
+    margin-top: 25%;
+    li {
+      list-style: none;
+      a {
+        color: $white-color;
+        color: #ffffff;
+        font-size: $font-size-md;
+        display: block;
+        border-bottom: 4px solid #242424;
+        padding: 1rem 0;
+      }
+    }
+  }
+  .panel-social {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    .social-menu {
+      justify-content: space-between;
+      border: none;
+      .ant-row {
+        padding: 0 2.5rem;
+        .ant-col {
+          flex: 1;
+          max-width: 100%;
+          text-align: center;
+          a {
+            padding: 0;
+            img {
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "assets/sass/variable";
+
+.booked-page {
+  h2 {
+    margin-top: 2.5rem;
+  }
+}
+
+.thank-you-box {
+  background: $primary-color;
+  border-radius: 20px;
+  margin: 0 auto;
+  * {
+    color: $black;
+  }
+  .thank-you-main-title {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  .img-box {
+    width: 100px;
+    span {
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+  }
+  .content-box {
+    font-size: 1rem;
+  }
+  .thank-you-box-footer {
+    border-top: 1px solid $black-shade-700;
+    padding: 0.8rem 0;
+  }
+}

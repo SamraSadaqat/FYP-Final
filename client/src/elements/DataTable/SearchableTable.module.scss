@@ -1,0 +1,95 @@
+.tableFonts {
+  font-family: "Poppins";
+}
+
+.bodyDiv {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 16px;
+  padding: 16px;
+
+  h4 {
+    font-size: 18px !important;
+  }
+}
+
+.centerHeadings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  @media (max-width: 510px) {
+    display: block;
+
+    a {
+      margin-top: 10px;
+    }
+  }
+
+  h3 {
+    font-size: 20px !important;
+    margin-bottom: 0 !important;
+  }
+
+  button {
+    height: 40px;
+    padding: 8px 32px;
+  }
+
+  .submitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 32px;
+    font-size: 14px;
+    color: white;
+    background-color: #366bec;
+
+    @media (min-width: 576px) {
+      float: right;
+    }
+  }
+}
+
+.exportBtn {
+  font-weight: 700;
+}
+
+.PopOverhead {
+  display: flex;
+  align-items: baseline;
+
+  h4 {
+    margin-right: 25px;
+  }
+}
+
+.d_flex1 {
+  display: flex !important;
+  justify-content: flex-end;
+  @media (max-width: 767px) {
+    margin-top: 16px;
+  }
+
+  .search_btn {
+    border-radius: 4px;
+    border: 1px solid #d4dae9;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  button {
+    border-radius: 4px;
+    border: 1px solid #d4dae9;
+    height: 40px !important;
+    padding: 8px;
+    width: 40px;
+  }
+}
+
+.justSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}

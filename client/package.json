@@ -1,0 +1,91 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "4.7.0",
+    "@react-oauth/google": "0.2.6",
+    "@reduxjs/toolkit": "^1.8.0",
+    "antd": "^5.2.2",
+    "antd-weekly-calendar": "^1.1.2",
+    "axios": "^0.26.1",
+    "bootstrap": "^5.3.3",
+    "date-fns": "^2.30.0",
+    "dayjs": "1.11.0",
+    "i": "^0.3.7",
+    "jwt-decode": "3.1.2",
+    "moment": "2.29.3",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^4.5.136",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^17.0.2",
+    "react-error-boundary": "^3.1.4",
+    "react-highlight-words": "^0.20.0",
+    "react-indiana-drag-scroll": "^2.2.0",
+    "react-pdf": "^9.1.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "5.0.0",
+    "react-slick": "^0.30.2",
+    "react-webcam": "^7.2.0",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.49.9",
+    "slick-carousel": "^1.8.1",
+    "socket.io-client": "^4.8.0",
+    "styled-components": "^6.1.12",
+    "tesseract.js": "^5.1.0",
+    "use-react-router-breadcrumbs": "^3.2.1"
+  },
+  "scripts": {
+    "rebuild": "npm remove-lock-files && npm remove-node-modules && npm install --ignore-engines",
+    "remove-lock-files": "rm -rf package-lock.json",
+    "remove-node-modules": "rm -rf node_modules",
+    "start": "set NODE_ENV=dev && react-scripts start",
+    "build:dev": "NODE_ENV=dev react-scripts build",
+    "build:qa": "NODE_ENV=qa react-scripts build",
+    "build:uat": "NODE_ENV=uat react-scripts build",
+    "build:prod": "NODE_ENV=prod react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"{src,apps}/**/*.{js,jsx}\" --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx}\" \"test/**/*.{js,jsx}\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "assert": "2.0.0",
+    "browserify-zlib": "0.2.0",
+    "buffer": "6.0.3",
+    "eslint": "^8.12.0",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "process": "^0.11.10",
+    "stream-browserify": "3.0.0",
+    "util": "^0.12.4"
+  }
+}
